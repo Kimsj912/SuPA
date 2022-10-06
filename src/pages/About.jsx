@@ -1,11 +1,14 @@
 import React from "react";
+import useRouter from './../hooks/useRouter';
 
+// useRouter를 통해 push를 받아와 button이 눌리면 "/"페이지로 이동하도록 push를 실행
 const About = () => {
+    const { push } = useRouter();
     return (
-        <div>
+        <>
             <h1>About</h1>
-            <a href="/">Home</a>
-        </div>
+            <button onClick={()=>push("/")}>Home</button>
+        </>
     );
 }
 
