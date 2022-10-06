@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Router from './Router'
-import Route from './Route'
+import Router from './components/Router'
+import Route from './components/Route'
 import Root from './pages/Root'
 import About from './pages/About'
+import './main.css'
 
 const container = document.getElementById('root');
 ReactDOM.createRoot(container).render(
